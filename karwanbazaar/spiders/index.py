@@ -1,3 +1,9 @@
+"""
+IndexSpider
+
+Crawls the mainpage of Motikontho
+"""
+
 import scrapy
 
 
