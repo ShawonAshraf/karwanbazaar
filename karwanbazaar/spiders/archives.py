@@ -1,3 +1,9 @@
+"""
+Crawls the file generated from index spider
+Writes archive list urls to a json file
+"""
+
+
 import scrapy
 import os
 import json
