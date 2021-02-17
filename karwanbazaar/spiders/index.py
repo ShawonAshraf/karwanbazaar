@@ -5,6 +5,7 @@ Crawls the mainpage of Motikontho
 """
 
 import scrapy
+import os
 
 
 class IndexSpider(scrapy.Spider):
@@ -23,8 +24,8 @@ class IndexSpider(scrapy.Spider):
         decoded = response.body.decode("utf-8")
 
         # write to file
-        with open("./output/index.html", "w") as f:
+        with open(f"{os.getcwd()}/output/index.html", "w") as f:
             f.write(decoded)
 
         # log
-        self.log("Saved file -> index.html")
+        self.log(f"Saved index data -> {os.getcwd()}/output/index.html")
