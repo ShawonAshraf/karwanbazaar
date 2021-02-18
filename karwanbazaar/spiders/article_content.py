@@ -1,3 +1,12 @@
+"""
+Contents of all articles
+
+output format:
+{article_id, title, content}
+
+output file format: jsonl
+"""
+
 import scrapy
 import os
 import jsonlines
